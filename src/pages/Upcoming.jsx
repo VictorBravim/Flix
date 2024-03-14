@@ -3,7 +3,6 @@ import Contextpage from '../Contextpage';
 import Moviecard from '../components/Moviecard';
 import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../components/Header';
-// import { Pagebtn } from '../components/Pagebtn';
 import { Helmet } from 'react-helmet';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
@@ -12,7 +11,7 @@ function Upcoming() {
   const { loader, setPage, page, fetchUpcoming, upcoming, totalPage } = useContext(Contextpage);
 
   useEffect(() => {
-    setPage(1) // Reset Page to 1 on initial render.
+    setPage(1)
   }, []);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ function Upcoming() {
   return (
     <>
       <Helmet>
-        <title>BlueBird Movies | Upcoming movies</title>
+        <title>Lançamento</title>
       </Helmet>
 
       <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
@@ -39,7 +38,7 @@ function Upcoming() {
                 <>
                   <InfiniteScroll
                     className="w-full md:p-2 flex flex-wrap relative justify-evenly md:justify-around"
-                    dataLength={upcoming.length} //This is important field to render the next data
+                    dataLength={upcoming.length}
                     next={() => setPage(page + 1)}
                     hasMore={page < totalPage}
                     loader={<span className="loader m-10"></span>}
@@ -57,8 +56,6 @@ function Upcoming() {
             }
           </AnimatePresence>
         </motion.div>
-        {/* <Pagebtn /> */}
-
       </div>
     </>
   )

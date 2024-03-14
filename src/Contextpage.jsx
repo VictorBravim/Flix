@@ -37,7 +37,7 @@ export function MovieProvider({ children }) {
 
   const filteredGenre = async () => {
     const data = await fetch(
-      `https://api.themoviedb.org/3/discover/movie?with_genres=${activegenre}&api_key=${APIKEY}&with_origin_country=IN&page=${page}`
+      `https://api.themoviedb.org/3/discover/movie?with_genres=${activegenre}&api_key=${APIKEY}&with_origin_country=US&page=${page}`
     );
     const filteredGenre = await data.json();
     setMovies(movies.concat(filteredGenre.results)); // Concat new movies with previous movies, on genre change movies are reset to [] so that only movies of new genre will appear, check out useEffect on top for more information.
@@ -48,7 +48,7 @@ export function MovieProvider({ children }) {
 
   const fetchSearch = async (query) => {
     const data = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&with_origin_country=IN&language=en-US&query=${query}&page=1&include_adult=false`
+      `https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&with_origin_country=US&language=en-US&query=${query}&page=1&include_adult=false`
     );
     const searchmovies = await data.json();
     setSearchedMovies(searchmovies.results); 
@@ -58,7 +58,7 @@ export function MovieProvider({ children }) {
 
   const fetchGenre = async () => {
     const data = await fetch(
-      `https://api.themoviedb.org/3/genre/movie/list?api_key=${APIKEY}&with_origin_country=IN&language=en-US`
+      `https://api.themoviedb.org/3/genre/movie/list?api_key=${APIKEY}&with_origin_country=US&language=en-US`
     );
     const gen = await data.json();
     setGenres(gen.genres);
@@ -66,7 +66,7 @@ export function MovieProvider({ children }) {
 
   const fetchTrending = async () => {
     const data = await fetch(
-      `https://api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}&with_origin_country=IN&page=${page}`
+      `https://api.themoviedb.org/3/trending/movie/day?api_key=${APIKEY}&with_origin_country=US&page=${page}`
     );
     const trend = await data.json();
     setTrending(trending.concat(trend.results));
@@ -77,7 +77,7 @@ export function MovieProvider({ children }) {
 
   const fetchUpcoming = async () => {
     const data = await fetch(
-      `https://api.themoviedb.org/3/movie/upcoming?api_key=${APIKEY}&with_origin_country=IN&language=en-US&page=${page}`
+      `https://api.themoviedb.org/3/movie/upcoming?api_key=${APIKEY}&with_origin_country=US&language=en-US&page=${page}`
     );
     const upc = await data.json();
     setUpcoming(upcoming.concat(upc.results));

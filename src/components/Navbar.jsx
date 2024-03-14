@@ -13,7 +13,6 @@ function Navbar() {
     const { header, user } = useContext(Contextpage);
     const [activemobile, setActivemobile] = useState(false);
 
-    // console.log(user)
     const Navdata = [
         {
             id: 1,
@@ -43,7 +42,6 @@ function Navbar() {
 
     return (
         <>
-            {/* mobilebutton */}
             <button className="z-40 text-3xl text-black fixed right-0 bottom-0 m-6 p-4 duration-150 rounded-full active:scale-90 bg-white block md:hidden" onClick={() => setActivemobile(!activemobile)}>
                 {activemobile ? <HiX /> : <HiMenuAlt1 />}
             </button>
@@ -67,8 +65,6 @@ function Navbar() {
                     ))}
 
                 </ul>
-
-                {/* Loginsection */}
 
                 <div className="absolute bottom-0 w-full p-5 md:p-2 text-white">
                     {user ? <>

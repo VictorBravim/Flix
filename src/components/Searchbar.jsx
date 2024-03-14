@@ -14,21 +14,18 @@ function Searchbar() {
   const [typingTimeout, setTypingTimeout] = useState(null);
 
   const handleSearch = () => {
-      // Clear the previous timeout to prevent premature execution
       if (typingTimeout) {
           clearTimeout(typingTimeout);
       }
 
-      // Set a new timeout
       const newTimeout = setTimeout(() => {
           onKeyUp(value);
-      }, 500); // Adjust the timeout duration as needed (in milliseconds)
+      }, 500);
 
       setTypingTimeout(newTimeout);
   };
 
   const onKeyUp = (query) => {
-    // console.log(query)
     if (query !== "") {
         query = query.trim();
 
@@ -43,7 +40,7 @@ function Searchbar() {
   return (
     <>
     <Helmet>
-        <title>BlueBird Movies</title>
+        <title>Filmes</title>
     </Helmet>
 
     <div className="w-full bg-gradient-to-r from-fuchsia-500 to-cyan-500 h-[10rem] md:h-[12rem]">
