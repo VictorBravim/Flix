@@ -53,7 +53,7 @@ function Navbar() {
                 >
                     <Link to="/" className="logo flex flex-col justify-center items-center m-7 gap-2" onClick={() => setActivemobile(!activemobile)}>
                         <img src={logo} alt="logo" className="w-24" />
-                        <h1 className="text-gray-400/70 font-bold text-2xl text-center">Filmes</h1>
+                        <h1 className="text-gray-400/70 font-bold text-2xl text-center">Filmigo</h1>
                     </Link>
                 </motion.div>
 
