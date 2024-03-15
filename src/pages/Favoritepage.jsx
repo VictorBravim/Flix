@@ -35,7 +35,7 @@ function Favoritepage() {
                                     {
                                         Object.keys(localStorageData).filter(key => !isNaN(key)).length == 0
                                             ?
-                                            <p className="text-xl text-white">No Bookmark Yet!</p>
+                                            <p className="text-xl text-white">Nenhum favorito ainda!</p>
                                             :
                                             Object.keys(localStorageData).filter(key => !isNaN(key)).map((key, index) => (<Moviecard key={index} movie={{ ...JSON.parse(localStorageData[key]) }} />))
                                     }

@@ -43,8 +43,8 @@ function Searchbar() {
         <title>Filmes</title>
     </Helmet>
 
-    <div className="w-full bg-gradient-to-r from-fuchsia-500 to-cyan-500 h-[10rem] md:h-[12rem]">
-      <div className='h-full w-full bg-black/30 flex justify-center items-center'>
+    <div className="w-full bg-blue h-[10rem] md:h-[12rem]">
+      <div className='h-full w-full flex justify-center items-center'>
         <input
           type="search"
           name="searchpanel"
