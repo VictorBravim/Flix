@@ -11,7 +11,6 @@ import { MovieProvider } from "./Contextpage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Player from './pages/Player';
-import Search from './pages/Search';
 import { Helmet } from "react-helmet";
 import logo from "./assets/images/logo.png"
 
