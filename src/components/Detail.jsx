@@ -2,7 +2,6 @@ import React, { useEffect, useState, useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Contextpage from '../Contextpage';
 import { HiChevronLeft } from "react-icons/hi";
-import noimage from '../assets/images/movies.jpg'
 import { FaPlay } from "react-icons/fa";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
