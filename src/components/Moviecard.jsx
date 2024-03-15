@@ -23,7 +23,7 @@ function Moviecard({ movie }) {
 
     const BookmarkMovie = () => {
         if (!user) {
-            toast.info("Para adicionar este filme aos favoritos, faça login.");
+            toast.info("Faça login para adicionar aos favoritos");
         } else {
             setIsBookmarked(!isBookmarked)
             if (isBookmarked) {
