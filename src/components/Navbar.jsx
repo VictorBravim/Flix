@@ -16,8 +16,8 @@ function Navbar() {
     const Navdata = [
         {
             id: 1,
-            headername: "Genres",
-            Name: "Gêneros",
+            headername: "Upcoming Movies",
+            Name: "Lançamento",
             link : "/"
         },
         {
@@ -28,9 +28,9 @@ function Navbar() {
         },
         {
             id: 3,
-            headername: "Upcoming Movies",
-            Name: "Lançamento",
-            link:"/upcoming"
+            headername: "Genres Movies",
+            Name: "Generos",
+            link:"/Container"
         },
         {
             id: 4,

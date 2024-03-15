@@ -14,7 +14,6 @@ export const Pagebtn = () => {
                 <div className='px-4 py-2 bg-slate-700  text-white font-semibold rounded-full'>{page}</div>
                 <a href='#' onClick={() => setPage(page + 1)}><Button item="Next" /></a>
             </div>
-
         </>
     )
 }

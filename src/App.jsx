@@ -38,10 +38,10 @@ function App() {
       <Navbar />
       <div className="md:ml-[15rem]">
         <Routes>
-          <Route path='/' element={<Container />} />
+        <Route path='/' element={<Upcoming />} />
+          <Route path='/Container' element={<Container />} />
           <Route path='/login' element={<Login />} />
           <Route path='/trending' element={<Trending />} />
-          <Route path='/upcoming' element={<Upcoming />} />
           <Route path='/moviedetail/:id' element={<Detail />} />
           <Route path="/favorite" element={<Favorite />} />
           <Route path="/player/:id/:title" element={<Player />} />
