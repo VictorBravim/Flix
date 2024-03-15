@@ -15,7 +15,7 @@ const Player = () => {
     const APIKEY = import.meta.env.VITE_API_KEY;
     const fetchMovie = async () => {
         const data = await fetch(
-          `https://api.themoviedb.org/3/movie/${id}?api_key=${APIKEY}&language=en-US`
+          `https://api.themoviedb.org/3/movie/${id}?api_key=${APIKEY}&language=pt-BR`
         );
         const moviedetail = await data.json();
         setMoviedet(moviedetail);
