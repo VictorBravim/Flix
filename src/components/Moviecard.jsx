@@ -1,6 +1,6 @@
 import React, { useState, useEffect ,useContext} from 'react'
 import { Link } from 'react-router-dom'
-import noimage from '../assets/images/no-image.jpg'
+import noimage from '../assets/img/no-image.webp'
 import { motion } from 'framer-motion'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import logo from "../assets/images/Group 4.png"
+import logo from "../assets/img/logo.webp"
 import { Link } from "react-router-dom";
 import Contextpage from '../Contextpage';
 import { motion } from "framer-motion";
