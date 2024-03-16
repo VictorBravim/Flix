@@ -45,11 +45,9 @@ function Upcoming() {
                     scrollThreshol={0.9}
                     style={{ overflow: 'hidden' }}
                   >
-
-                    {upcoming.map((upc) => (
-                      <Moviecard key={upc.id} movie={upc} />
+                    {upcoming.map((upc, index) => (
+                      <Moviecard key={`upcoming-${upc.id}-${index}`} movie={upc} />
                     ))}
-
                   </InfiniteScroll>
 
                 </>

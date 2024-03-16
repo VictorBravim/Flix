@@ -45,13 +45,10 @@ function Trending() {
                                         scrollThreshol={0.9}
                                         style={{ overflow: 'hidden' }}
                                     >
-
-                                        {trending.map((tred) => (
-                                            <Moviecard key={tred.id} movie={tred} />
+                                        {trending.map((tred, index) => (
+                                            <Moviecard key={`trending-${tred.id}-${index}`} movie={tred} />
                                         ))}
-
                                     </InfiniteScroll>
-
                                 </>
                         }
                     </AnimatePresence>

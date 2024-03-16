@@ -45,16 +45,13 @@ function Movies() {
                                     next={() => setPage(page + 1)}
                                     hasMore={page < totalPage}
                                     loader={<span className="loader m-10"></span>}
-                                    scrollThreshol={0.9}
+                                    scrollThreshold={0.9}
                                     style={{ overflow: 'hidden' }}
                                 >
-
-                                    {movies.map((movie) => (
-                                        <Moviecard key={movie.id} movie={movie} />
+                                    {movies.map((movie, index) => (
+                                        <Moviecard key={`movies-${movie.id}-${index}`} movie={movie} />
                                     ))}
-
                                 </InfiniteScroll>
-
                             </>
                     }
                 </AnimatePresence>
