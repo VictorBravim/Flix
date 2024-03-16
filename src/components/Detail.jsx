@@ -52,7 +52,7 @@ export const Detail = () => {
     fetchVideo();
   }, []);
 
-  
+
   return (
 
     <>
@@ -90,17 +90,17 @@ export const Detail = () => {
               <h1 className="text-3xl text-blue-300 font-semibold text-center p-2">Elenco</h1>
 
               <div className="md:px-5 flex flex-row my-5 max-w-full flex-start overflow-x-auto relative
-              scrollbar-thin scrollbar-thumb-gray-500/20 scrollbar-track-gray-900/90 md:pb-3">
-                {castdata.map((cast) => (
-                  <>
-                    {cast.profile_path !== null ? <>
-                      <div className='flex min-w-[9rem] md:min-w-[10rem] max-w-[9rem] md:max-w-[10rem] h-full items-center text-center flex-col mx-1'>
+               scrollbar-thin scrollbar-thumb-gray-500/20 scrollbar-track-gray-900/90 md:pb-3">
+                {castdata.map((cast, index) => (
+                  <div key={`cast-${cast.id}-${index}`} className='flex min-w-[9rem] md:min-w-[10rem] max-w-[9rem] md:max-w-[10rem] h-full items-center text-center flex-col mx-1'>
+                    {cast.profile_path !== null && (
+                      <>
                         <LazyLoadImage effect='blur' src={"https://image.tmdb.org/t/p/w500" + cast.profile_path} className="w-full h-full rounded-xl" />
                         <p className='text-white'>{cast.name}</p>
                         <p className='text-blue-300'>({cast.character})</p>
-                      </div>
-                    </> : null}
-                  </>
+                      </>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -108,20 +108,15 @@ export const Detail = () => {
             {/* trailer */}
             <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
               {Array.from(video).filter(trail => trail.type === "Trailer").map((trail, index) => (
-                <>
-                    <>
-                      <a key={trail.id} href={'https://www.youtube.com/watch?v=' + trail.key} target="_blank" className='flex border-2 border-red-600 bg-red-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
-                        <FaPlay />Assista o trailer {Array.from(video).filter(trail => trail.type === "Trailer").length>1?index+1:""}
-                      </a>
-                    </>
-                </>
-              ))
-              }
+                <a key={`trailer-${trail.id}-${index}`} href={'https://www.youtube.com/watch?v=' + trail.key} target="_blank" className='flex border-2 border-red-600 bg-red-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
+                  <FaPlay />Assista o trailer
+                </a>
+              ))}
             </div>
 
             {/* watch movie */}
             <div className='flex justify-center items-center mb-10 gap-5 flex-wrap'>
-              <Link  to={`/player/${id}/${slugify(moviedet.title)}`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
+              <Link to={`/player/${id}/${slugify(moviedet.title)}`} className='flex border-2 border-green-600 bg-green-600/40 p-3 items-center justify-center gap-2 text-xl font-semibold rounded-full text-white'>
                 <FaPlay />Assistir filme
               </Link>
             </div>

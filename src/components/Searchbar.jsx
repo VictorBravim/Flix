@@ -49,7 +49,7 @@ function Searchbar() {
           type="search"
           name="searchpanel"
           id="searchpanel"
-          placeholder='Search Movie'
+          placeholder='Procurar Filmes'
           className='p-3 w-full mx-10 md:w-[40rem]  rounded-xl outline-none'
           onKeyUp={(e) => handleSearch()}
           value={value}

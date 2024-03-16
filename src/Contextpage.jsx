@@ -27,7 +27,7 @@ export function MovieProvider({ children }) {
 
   useEffect(() => {
     if (page < 1) {
-      setPage(1)  
+      setPage(1)
     }
   }, [page]);
 
@@ -40,7 +40,7 @@ export function MovieProvider({ children }) {
     setMovies(movies.concat(filteredGenre.results));
     setTotalPage(filteredGenre.total_pages);
     setLoader(false);
-    setHeader("Genres");
+    setHeader("Gêneros");
   };
 
   const fetchSearch = async (query) => {
@@ -48,9 +48,9 @@ export function MovieProvider({ children }) {
       `https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&with_origin_country=BR&language=pt-BRS&query=${query}&page=1&include_adult=false`
     );
     const searchmovies = await data.json();
-    setSearchedMovies(searchmovies.results); 
+    setSearchedMovies(searchmovies.results);
     setLoader(false);
-    setHeader(`Results for "${query}"`);
+    setHeader(`Resultados para "${query}"`);
   }
 
   const fetchGenre = async () => {
@@ -69,7 +69,7 @@ export function MovieProvider({ children }) {
     setTrending(trending.concat(trend.results));
     setTotalPage(trend.total_pages);
     setLoader(false);
-    setHeader("Filmes Populares");
+    setHeader("Populares");
   }
 
   const fetchUpcoming = async () => {
@@ -80,12 +80,12 @@ export function MovieProvider({ children }) {
     setUpcoming(upcoming.concat(upc.results));
     setTotalPage(upc.total_pages);
     setLoader(false);
-    setHeader("Filmes Lançamentos");
+    setHeader("Lançamentos");
   }
 
   const GetFavorite = () => {
     setLoader(false);
-    setHeader("Filmes Favoritos");
+    setHeader("Favoritos");
   }
 
   const googleProvider = new GoogleAuthProvider();
