@@ -1,4 +1,4 @@
-# Filmes Api - Flix
+# Flix - Film TMDB API
 
 ![Sem título 2](https://github.com/VictorBravim/Flix/assets/122113588/94073de9-ce1b-4f92-b8dc-24639191ac63)
 
