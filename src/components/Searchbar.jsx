@@ -43,7 +43,7 @@ function Searchbar() {
         <title>Filmes</title>
     </Helmet>
 
-    <div className="w-full bg-blue h-[10rem] md:h-[12rem]">
+    <div className="w-full bg-black h-[10rem] md:h-[12rem]">
       <div className='h-full w-full flex justify-center items-center'>
         <input
           type="search"

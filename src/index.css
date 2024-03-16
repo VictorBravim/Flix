@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color:  #10141e;
+    background-color:  #000000;
 }
 
 .shadow{
@@ -34,10 +34,7 @@ body{
 .active{
     background-color: white;
     color: black;
-    /* border: 1px solid white; */
 }
-
-/* loader */
 
 .loader {
     width: 48px;

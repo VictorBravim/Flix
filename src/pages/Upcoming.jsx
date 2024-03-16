@@ -27,7 +27,7 @@ function Upcoming() {
         <title>Lançamento</title>
       </Helmet>
 
-      <div className='w-full bg-[#10141e] md:p-10 mb-20 md:mb-0'>
+      <div className='w-full bg-black md:p-10 mb-20 md:mb-0'>
         <Header />
         <motion.div
           layout
