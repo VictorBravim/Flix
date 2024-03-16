@@ -50,7 +50,7 @@ function Searchbar() {
           name="searchpanel"
           id="searchpanel"
           placeholder='Procurar Filmes'
-          className='p-3 w-full mx-10 md:w-[40rem]  rounded-xl outline-none'
+          className='p-3 w-full mx-10 md:w-[40rem]  rounded-lg outline-none'
           onKeyUp={(e) => handleSearch()}
           value={value}
           onChange={(e) => setValue(e.target.value)}

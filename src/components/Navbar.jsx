@@ -75,9 +75,6 @@ function Navbar() {
               onClick={toggleMobileMenu}
             >
               <img src={logo} alt="logo" className="w-24" />
-              <h1 className="text-gray-400/70 font-bold text-2xl text-center">
-                Flix
-              </h1>
             </Link>
           </motion.div>
   
@@ -124,7 +121,7 @@ function Navbar() {
             ) : (
               <Link
                 to="/login"
-                className="w-full bg-balck py-2 gap-4 rounded-xl flex items-center justify-center font-semibold border-2 border-white"
+                className="w-full bg-balck py-2 gap-4 rounded-xl flex items-center justify-center font-semibold border-2 border-blue-100/40"
                 onClick={toggleMobileMenu}
               >
                 <h1>Log in</h1>
