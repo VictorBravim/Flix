@@ -1,6 +1,6 @@
 # Filmes Api - Flix
 
-# IMG
+![Sem título 2](https://github.com/VictorBravim/Flix/assets/122113588/94073de9-ce1b-4f92-b8dc-24639191ac63)
 
 ## <code>Introdução</code>
 
@@ -17,15 +17,21 @@ Antes de executar o projeto, certifique-se de ter os seguintes pré-requisitos i
 ## <code>Configuração</code>
 
 1. Clone o repositório do GitHub:
-``` git clone https://github.com/VictorBravim/Flix.git ```
+```
+git clone https://github.com/VictorBravim/Flix.git
+```
 
-2. Navegue até o diretório do projeto:
-``` cd moviesapp ```
+3. Navegue até o diretório do projeto:
+```
+cd moviesapp
+```
 
-3. Instale as dependências:
-``` npm install ```
+5. Instale as dependências:
+```
+npm install
+```
 
-4. Crie um arquivo `.env` no diretório raiz do projeto e preencha-o com as seguintes variáveis de ambiente:
+6. Crie um arquivo `.env` no diretório raiz do projeto e preencha-o com as seguintes variáveis de ambiente:
 ``` 
 VITE_API_KEY=9d613a549275367434c92bddbd15e9ae
 
