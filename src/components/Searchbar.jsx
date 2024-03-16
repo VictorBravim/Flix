@@ -40,7 +40,7 @@ function Searchbar() {
   return (
     <>
     <Helmet>
-        <title>Filme</title>
+        <title>Filmes</title>
     </Helmet>
 
     <div className="w-full bg-black h-[10rem] md:h-[12rem]">
