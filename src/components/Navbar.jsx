@@ -99,7 +99,7 @@ function Navbar() {
           <div className="absolute bottom-0 w-full p-5 md:p-2 text-white">
             {user ? (
               <>
-                <div className="w-full bg-gray-900 px-5 py-2 gap-4 rounded-xl flex items-center font-semibold border-2 border-blue-100/10">
+                <div className="w-full bg-black px-5 py-2 gap-4 rounded-xl flex items-center font-semibold border-2 border-blue-100/40">
                   <img
                     src={user.photoURL || User}
                     alt="user"
@@ -109,10 +109,10 @@ function Navbar() {
                 </div>
   
                 <div
-                  className="cursor-pointer bg-red-500 flex justify-center items-center p-2 rounded-xl mt-2"
+                  className="cursor-pointer bg-red-600 flex justify-center items-center p-2 rounded-xl mt-2"
                   onClick={() => {
                     auth.signOut();
-                    toast.error("Logout successfully");
+                    toast.error("Logout com sucesso");
                   }}
                 >
                   <h1>Logout</h1>
