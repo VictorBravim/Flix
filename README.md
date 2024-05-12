@@ -1,6 +1,6 @@
 # 🎬 Flix
 
-![Sem título 2](https://github.com/VictorBravim/Flix/assets/122113588/94073de9-ce1b-4f92-b8dc-24639191ac63)
+![181shots_so](https://github.com/VictorBravim/Flix/assets/122113588/3bea0c8d-d8e0-4b6b-8290-3ad8993d18b1)
 
 ## 🚀 Overview
 
