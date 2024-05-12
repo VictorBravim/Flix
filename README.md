@@ -35,7 +35,7 @@ cd Flix
 npm install
 ```
 
-4. Create a `.env` file in the project root directory and fill it with the following environment variables:
+4. Create a .env file in the project root directory and fill it with the following environment variables:
    
 ``` 
 VITE_API_KEY=<SUA_TMDB_API_KEY>
@@ -48,7 +48,7 @@ VITE_FIREBASE_MESAGING_SENDER_ID=<SEU_FIREBASE_MESAGING_SENDER_ID>
 APP_ID=<SEU_FIREBASE_ID>
 ```
 
-Replace `<YOUR_FIREBASE_API_KEY>`, `<YOUR_FIREBASE_AUTH_DOMAIN>`, `<YOUR_FIREBASE_PROJECTID>`, `<YOUR_FIREBASE_STORAGE_BUCKET>` and `<YOUR_FIREBASE_MESAGING_SENDER_ID>` with the actual details of your Firebase project.
+Replace <YOUR_FIREBASE_API_KEY>, <YOUR_FIREBASE_AUTH_DOMAIN>, <YOUR_FIREBASE_PROJECTID>, <YOUR_FIREBASE_STORAGE_BUCKET> and <YOUR_FIREBASE_MESAGING_SENDER_ID> with the actual details of your Firebase project.
 
 ## 🛠️ Project Structure
 
